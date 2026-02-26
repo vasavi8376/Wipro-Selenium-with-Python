@@ -1,0 +1,4 @@
+2026-02-25 11:55:19,470 - INFO - ====== WebDriver manager ======
+2026-02-25 11:55:20,548 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:55:21,012 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 11:55:21,478 - INFO - Driver [C:\Users\vasav\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
