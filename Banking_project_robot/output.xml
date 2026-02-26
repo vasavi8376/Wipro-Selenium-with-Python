@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.1 on win32)" generated="2026-02-26T16:22:52.775367" rpa="false" schemaversion="5">
+<suite id="s1" name="Bank" source="C:\Users\vasav\PycharmProjects\Robot Framework\Banking_project\Bank.robot">
+<test id="s1-t1" name="Complete Banking Workflow Test" line="14">
+<kw name="Open Bank Application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:53.040616" level="INFO">Opening browser 'chrome' to base url 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T16:22:53.040416" elapsed="4.697383"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-26T16:22:57.738003" elapsed="0.025697"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-02-26T16:22:57.763860" elapsed="0.000859"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:22:53.039868" elapsed="4.724937"/>
+</kw>
+<kw name="Manager: Add New Customer">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:57.765882" level="INFO">Clicking button 'xpath://button[text()='Bank Manager Login']'.</msg>
+<arg>xpath://button[text()='Bank Manager Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:57.765445" elapsed="1.217387"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:58.983182" level="INFO">Clicking button 'xpath://button[contains(.,'Add Customer')]'.</msg>
+<arg>xpath://button[contains(.,'Add Customer')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:58.982986" elapsed="0.391558"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.375335" level="INFO">Typing text 'Vasavi' into text field 'xpath://input[@placeholder='First Name']'.</msg>
+<arg>xpath://input[@placeholder='First Name']</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.374994" elapsed="0.389328"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.764878" level="INFO">Typing text 'Chowdary' into text field 'xpath://input[@placeholder='Last Name']'.</msg>
+<arg>xpath://input[@placeholder='Last Name']</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.764551" elapsed="0.073106"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.838508" level="INFO">Typing text '523110' into text field 'xpath://input[@placeholder='Post Code']'.</msg>
+<arg>xpath://input[@placeholder='Post Code']</arg>
+<arg>${POST_CODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.838017" elapsed="0.061840"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.900417" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.900086" elapsed="0.072455"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.972827" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.972699" elapsed="0.004952"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:22:57.765163" elapsed="2.212707"/>
+</kw>
+<kw name="Manager: Open New Account">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:22:59.979090" level="INFO">Clicking button 'xpath://button[contains(.,'Open Account')]'.</msg>
+<arg>xpath://button[contains(.,'Open Account')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:22:59.978703" elapsed="0.082985"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.062060" level="INFO">Selecting options from selection list 'id:userSelect' by label Vasavi Chowdary.</msg>
+<arg>id:userSelect</arg>
+<arg>${FIRST_NAME} ${LAST_NAME}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.061837" elapsed="0.375109"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.437263" level="INFO">Selecting options from selection list 'id:currency' by label Dollar.</msg>
+<arg>id:currency</arg>
+<arg>Dollar</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.437099" elapsed="0.055804"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.493215" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.493047" elapsed="0.049005"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.542347" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.542218" elapsed="0.003944"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:22:59.978309" elapsed="0.568014"/>
+</kw>
+<kw name="Customer: Login and Perform Transactions">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.547356" level="INFO">Clicking button 'xpath://button[contains(.,'Home')]'.</msg>
+<arg>xpath://button[contains(.,'Home')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.547142" elapsed="0.062797"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.610248" level="INFO">Clicking button 'xpath://button[text()='Customer Login']'.</msg>
+<arg>xpath://button[text()='Customer Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.610086" elapsed="0.052933"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:00.663434" level="INFO">Selecting options from selection list 'id:userSelect' by label Vasavi Chowdary.</msg>
+<arg>id:userSelect</arg>
+<arg>${FIRST_NAME} ${LAST_NAME}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-26T16:23:00.663211" elapsed="0.374034"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.037756" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.037479" elapsed="0.052607"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.090558" level="INFO">Verifying element 'xpath://strong[2]' contains exact text '0'.</msg>
+<arg>xpath://strong[2]</arg>
+<arg>0</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.090286" elapsed="0.326134"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.416812" level="INFO">Clicking button 'xpath://button[contains(.,'Deposit')]'.</msg>
+<arg>xpath://button[contains(.,'Deposit')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.416569" elapsed="0.057952"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.474872" level="INFO">Typing text '500' into text field 'xpath://input[@placeholder='amount']'.</msg>
+<arg>xpath://input[@placeholder='amount']</arg>
+<arg>${DEPOSIT_AMT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.474671" elapsed="0.366256"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.841265" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.841087" elapsed="0.053728"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.895144" level="INFO">Verifying element 'xpath://span[@ng-show='message']' contains exact text 'Deposit Successful'.</msg>
+<arg>xpath://span[@ng-show='message']</arg>
+<arg>Deposit Successful</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.894972" elapsed="0.013691"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.909011" level="INFO">Verifying element 'xpath://strong[2]' contains exact text '500'.</msg>
+<arg>xpath://strong[2]</arg>
+<arg>${DEPOSIT_AMT}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.908816" elapsed="0.011500"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:01.920639" level="INFO">Clicking button 'xpath://button[contains(.,'Withdrawl')]'.</msg>
+<arg>xpath://button[contains(.,'Withdrawl')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.920479" elapsed="0.053275"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T16:23:03.974572" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T16:23:01.973982" elapsed="2.000695"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:03.975053" level="INFO">Typing text '200' into text field 'xpath://input[@placeholder='amount']'.</msg>
+<arg>xpath://input[@placeholder='amount']</arg>
+<arg>${WITHDRAW_AMT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:03.974837" elapsed="0.059042"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:04.034380" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:23:04.034118" elapsed="0.056770"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:04.091246" level="INFO">Verifying element 'xpath://span[@ng-show='message']' contains exact text 'Transaction successful'.</msg>
+<arg>xpath://span[@ng-show='message']</arg>
+<arg>Transaction successful</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-26T16:23:04.091054" elapsed="0.011437"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:23:04.102807" level="INFO">Verifying element 'xpath://strong[2]' contains exact text '300'.</msg>
+<arg>xpath://strong[2]</arg>
+<arg>300</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-26T16:23:04.102640" elapsed="0.010790"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:23:00.546780" elapsed="3.566746"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-26T16:23:04.113822" elapsed="2.215787"/>
+</kw>
+<doc>Test Login, Add Customer, Open Account, and Transactions.</doc>
+<status status="PASS" start="2026-02-26T16:22:53.039213" elapsed="13.290661"/>
+</test>
+<status status="PASS" start="2026-02-26T16:22:52.776927" elapsed="13.554651"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Bank" id="s1" pass="1" fail="0" skip="0">Bank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
